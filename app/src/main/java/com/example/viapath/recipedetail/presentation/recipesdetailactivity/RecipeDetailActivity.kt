@@ -1,16 +1,19 @@
 package com.example.viapath.recipedetail.presentation.recipesdetailactivity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NavUtils
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import com.example.viapath.R
 import com.example.viapath.databinding.ActivityRecipeDetailBinding
-import com.example.viapath.recipedetail.presentation.recipesdetailactivity.viewmodel.RecipeDetailsViewModel
 import com.example.viapath.recipedetail.commons.Constants
+import com.example.viapath.recipedetail.presentation.recipesdetailactivity.viewmodel.RecipeDetailsViewModel
 import dagger.hilt.android.AndroidEntryPoint
+
 
 @AndroidEntryPoint
 class RecipeDetailActivity : AppCompatActivity() {
@@ -48,5 +51,15 @@ class RecipeDetailActivity : AppCompatActivity() {
             R.id.navHostFragmentContainer
         )
         setupWithNavController(viewBinding.bottomNavigationView, navController)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
