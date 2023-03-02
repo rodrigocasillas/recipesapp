@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--View Dimens-->
+    <dimen name="margin_top_5dp">5dp</dimen>
+    <dimen name="margin_horizontal_10dp">10dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="padding_vertical_15dp">15dp</dimen>
+    <dimen name="padding_top_25dp">25dp</dimen>
+    <dimen name="padding_bottom_25p">25dp</dimen>
+    <dimen name="padding_horizontal_10dp">10dp</dimen>
+    <dimen name="padding_top_15dp">15dp</dimen>
+    <dimen name="margin_bottom_10dp">10dp</dimen>
+    <dimen name="width_height_100dp">100dp</dimen>
+    <dimen name="width_height_0dp">0dp</dimen>
+    <dimen name="card_corner_radius_30dp">30dp</dimen>
+    <dimen name="corner_radius_100dp">100dp</dimen>
+    <dimen name="card_stroke_width_1dp">1dp</dimen>
+
+    <!--Font Size-->
+    <dimen name="font_size_18sp">18sp</dimen>
+
+</resources>

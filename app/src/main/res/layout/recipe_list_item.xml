@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:paddingVertical="@dimen/padding_vertical_15dp"
+    app:cardCornerRadius="@dimen/card_corner_radius_30dp"
+    app:strokeColor="@color/purple_500"
+    app:strokeWidth="@dimen/card_stroke_width_1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_15dp">
+
+        <ImageView
+            android:id="@+id/recipeImageView"
+            android:layout_width="@dimen/width_height_100dp"
+            android:layout_height="@dimen/width_height_100dp"
+            android:src="@drawable/ic_summary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="@dimen/width_height_0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_top_5dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_500"
+            app:layout_constraintStart_toStartOf="@id/recipeImageView"
+            app:layout_constraintTop_toBottomOf="@id/recipeImageView"
+            app:layout_constraintEnd_toEndOf="@id/recipeImageView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

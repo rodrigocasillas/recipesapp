@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ViaPath</string>
+    <string name="select_search_term">Select search term</string>
+    <string name="title">Title</string>
+    <string name="empty_string"></string>
+    <string-array name="search_terms">
+        <item>pizza</item>
+        <item>pasta</item>
+        <item>chicken</item>
+        <item>burger</item>
+        <item>mexican</item>
+    </string-array>
+</resources>
