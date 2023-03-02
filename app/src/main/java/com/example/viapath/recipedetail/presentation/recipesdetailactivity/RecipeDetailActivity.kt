@@ -3,7 +3,6 @@ package com.example.viapath.recipedetail.presentation.recipesdetailactivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NavUtils
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
